@@ -13,18 +13,25 @@ Sitio web para un negocio familiar de cerrajería con cuatro sucursales en Góme
 
 ## Tecnologías
 
-HTML5, CSS3 y JavaScript, sin frameworks ni dependencias externas. Los mapas se integran mediante Google Maps.
+HTML5 y CSS3, sin frameworks ni dependencias externas. Los mapas se integran mediante Google Maps.
 
 ## Organización del proyecto
 
 ```text
-index.html          Página principal
-sucursales/         Páginas de las cuatro sucursales
-css/estilos.css     Estilos compartidos y diseño adaptable
-js/configuracion.js Datos de contacto, horarios y ubicaciones
-js/contacto.js      Presentación de datos e interacciones de contacto
-img/                Recursos gráficos del negocio
+Paginaweb/
+├── index.html             Página principal, servicios y preguntas frecuentes
+├── css/
+│   ├── inicio.css         Estilos generales, menú y portada
+│   └── sucursal.css       Estilos compartidos por las cuatro sucursales
+├── sucursales/
+│   ├── matriz.html        Matriz de Gómez Palacio
+│   ├── matamoros.html     Sucursal Matamoros, Gómez Palacio
+│   ├── torreon.html       Sucursal Torreón
+│   └── durango.html       Sucursal Durango
+├── img/
+│   └── logotipo.png       Logotipo del negocio
+└── README.md              Presentación y documentación del proyecto
 ```
 
-Los datos de cada sucursal están centralizados en un archivo de configuración, mientras que todas las páginas comparten la hoja de estilos y la lógica de contacto.
+Cada sucursal contiene sus datos de contacto, horarios y ubicación directamente en su archivo HTML. Todas las páginas cargan inicio.css; las páginas de sucursal también cargan sucursal.css para mantener un diseño uniforme. El sitio no requiere JavaScript ni generación de páginas.
 
